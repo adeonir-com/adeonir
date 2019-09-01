@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Adeonir Kohl`,
-    description: ``,
-    author: `@adeonir`,
+    author: `Adeonir Kohl`,
     position: `Frontend Developer | UI Designer`,
+    title: ``,
+    description: ``,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
