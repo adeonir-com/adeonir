@@ -10,7 +10,7 @@ const Avatar = () => {
       query {
         avatarImage: file(relativePath: { eq: "avatar-image.png" }) {
           childImageSharp {
-            fixed(width: 160, height: 160) {
+            fixed(width: 128, height: 128) {
               ...GatsbyImageSharpFixed_withWebp
             }
           }
