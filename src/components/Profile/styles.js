@@ -29,7 +29,7 @@ export const ProfileAuthor = styled.h1`
 
 export const ProfilePosition = styled.h2`
   color: #a4a7bc;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 300;
   transition: color 0.3s;
 `
