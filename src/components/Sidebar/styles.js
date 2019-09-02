@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Img from "gatsby-image"
 
 export const SidebarWrapper = styled.aside`
   align-items: center;
@@ -10,5 +11,10 @@ export const SidebarWrapper = styled.aside`
   padding: 0 2rem;
   position: fixed;
   text-align: center;
+  width: 20rem;
+`
+
+export const SidebarImage = styled(Img)`
+  height: 11rem;
   width: 20rem;
 `

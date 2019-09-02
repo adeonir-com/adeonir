@@ -6,9 +6,9 @@ export const ProfileWrapper = styled.section`
   color: #f8f9fa;
   display: flex;
   flex-direction: column;
-  margin: 2rem;
-  width: 100%;
+  margin-top: -7rem;
   padding-bottom: 1rem;
+  width: 100%;
 `
 
 export const ProfileLink = styled(Link)`
