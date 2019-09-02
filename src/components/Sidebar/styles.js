@@ -1,20 +1,13 @@
-import styled from "styled-components"
-import Img from "gatsby-image"
+import styled from 'styled-components'
 
 export const SidebarWrapper = styled.aside`
   align-items: center;
   background: #282a36;
-  border-right: 1px solid #44475a;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 0 2rem;
+  padding: 2rem 2rem 0;
   position: fixed;
   text-align: center;
-  width: 20rem;
-`
-
-export const SidebarImage = styled(Img)`
-  height: 11rem;
   width: 20rem;
 `

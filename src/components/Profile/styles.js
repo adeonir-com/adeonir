@@ -1,12 +1,11 @@
-import styled from "styled-components"
-import { Link } from "gatsby"
+import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 export const ProfileWrapper = styled.section`
   border-bottom: 2px solid #44475a;
   color: #f8f9fa;
   display: flex;
   flex-direction: column;
-  margin-top: -7rem;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   width: 100%;
