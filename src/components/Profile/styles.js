@@ -2,11 +2,12 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const ProfileWrapper = styled.section`
-  border-bottom: 1px solid #44475a;
+  border-bottom: 2px solid #44475a;
   color: #f8f9fa;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin: 2rem;
+  width: 100%;
   padding-bottom: 1rem;
 `
 
