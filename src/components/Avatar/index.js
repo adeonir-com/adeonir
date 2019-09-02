@@ -1,7 +1,7 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import * as S from "./styles"
+import * as S from './styles'
 
 const Avatar = () => {
   const { avatarImage } = useStaticQuery(
@@ -9,7 +9,7 @@ const Avatar = () => {
       query {
         avatarImage: file(relativePath: { eq: "avatar-image.jpg" }) {
           childImageSharp {
-            fixed(width: 128, height: 128) {
+            fixed(width: 96, height: 96) {
               ...GatsbyImageSharpFixed_withWebp
             }
           }
