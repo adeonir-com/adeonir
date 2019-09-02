@@ -7,6 +7,7 @@ export const ProfileWrapper = styled.section`
   display: flex;
   flex-direction: column;
   margin-top: -7rem;
+  margin-bottom: 1rem;
   padding-bottom: 1rem;
   width: 100%;
 `
