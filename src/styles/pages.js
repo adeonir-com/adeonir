@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const PageWrapper = styled.section`
-  padding: 3rem 2rem 2rem 6rem;
+  padding: 2rem 1rem 1rem 4rem;
   width: 100%;
 
   h1 {
@@ -11,11 +11,12 @@ export const PageWrapper = styled.section`
     text-transform: uppercase;
 
     &::after {
-      background: #1c7ed6;
-      content: "";
+      background: #6b8cff;
+      content: '';
       display: block;
       height: 2px;
-      margin-top: 1rem;
+      margin-left: -1rem;
+      margin-top: 0.5rem;
       width: 20rem;
     }
   }

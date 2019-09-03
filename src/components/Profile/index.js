@@ -1,9 +1,9 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Avatar from "../Avatar"
+import Avatar from '../Avatar'
 
-import * as S from "./styles"
+import * as S from './styles'
 
 const Profile = () => {
   const {
@@ -26,8 +26,8 @@ const Profile = () => {
       <S.ProfileLink>
         <Avatar />
         <S.ProfileAuthor>{author}</S.ProfileAuthor>
-        <S.ProfilePosition>{position}</S.ProfilePosition>
       </S.ProfileLink>
+      <S.ProfilePosition>{position}</S.ProfilePosition>
     </S.ProfileWrapper>
   )
 }
