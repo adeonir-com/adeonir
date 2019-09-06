@@ -18,10 +18,6 @@ export const ProfileLink = styled(Link)`
   &:hover h1 {
     color: #6b8cff;
   }
-
-  &:hover div {
-    border-color: #6b8cff;
-  }
 `
 
 export const ProfileAuthor = styled.h1`

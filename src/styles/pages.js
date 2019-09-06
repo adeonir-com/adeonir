@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 
 export const PageWrapper = styled.section`
-  padding: 2rem 1rem 1rem 4rem;
-  width: 100%;
-
   h1 {
     color: #44475a;
     font-size: 2.25rem;

@@ -1,12 +1,17 @@
 import styled from 'styled-components'
 
+import colors from '~/styles/colors'
+
 export const LayoutWrapper = styled.section`
-  display: flex;
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "sidebar main";
 `
 
 export const LayoutMain = styled.main`
-  background: #f8f9fa;
+  background: ${colors.white};
+  grid-area: main;
   min-height: 100vh;
-  padding-left: 20rem;
-  width: 100%;
+  padding: 2rem 1rem 1rem 4rem;
 `

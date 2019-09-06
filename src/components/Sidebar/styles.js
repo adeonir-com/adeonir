@@ -5,9 +5,9 @@ export const SidebarWrapper = styled.aside`
   background: #282a36;
   display: flex;
   flex-direction: column;
+  grid-area: sidebar;
   height: 100vh;
-  padding: 2rem 2rem 0;
-  position: fixed;
+  padding: 2rem;
   text-align: center;
   width: 20rem;
 `
