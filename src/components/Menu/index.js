@@ -1,15 +1,15 @@
-import React from "react"
+import React from 'react'
 
-import links from "./content"
+import links from './content'
 
-import * as S from "./styles"
+import * as S from './styles'
 
 const Menu = () => (
   <S.MenuWrapper>
     <S.MenuList>
       {links.map((link, index) => (
         <S.MenuItem key={index}>
-          <S.MenuLink to={link.url} activeClassName="active">
+          <S.MenuLink to={link.url} activeClassName='active'>
             {link.label}
           </S.MenuLink>
         </S.MenuItem>

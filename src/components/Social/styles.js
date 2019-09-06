@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const SocialWrapper = styled.nav`
   margin: 2rem;

@@ -13,4 +13,4 @@ export const PostItemDate = styled.time``
 
 export const PostItemTitle = styled.h1``
 
-export const PostItemTitle = styled.p``
+export const PostItemText = styled.p``

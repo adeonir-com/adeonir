@@ -1,24 +1,24 @@
-const username = "adeonir"
+const username = 'adeonir'
 
 const links = [
   {
-    label: "Github",
+    label: 'Github',
     url: `https://github.com/${username}`,
   },
   {
-    label: "Twitter",
+    label: 'Twitter',
     url: `https://twitter.com/${username}`,
   },
   {
-    label: "Instagram",
+    label: 'Instagram',
     url: `https://www.instagram.com/${username}`,
   },
   {
-    label: "Behance",
+    label: 'Behance',
     url: `https://www.behance.net/${username}`,
   },
   {
-    label: "LinkedIn",
+    label: 'LinkedIn',
     url: `https://www.linkedin.com/in/${username}`,
   },
 ]

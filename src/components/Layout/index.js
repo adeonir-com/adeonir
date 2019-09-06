@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import GlobalSytles from "../../styles/global"
-import * as S from "./styles"
-import Sidebar from "../Sidebar"
+import GlobalSytles from '../../styles/global'
+import * as S from './styles'
+import Sidebar from '../Sidebar'
 
 const Layout = ({ children }) => {
   return (
