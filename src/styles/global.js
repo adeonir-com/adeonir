@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlogalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
-
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -60,6 +58,7 @@ const GlogalStyle = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100%;
     line-height: 1;
+    -webkit-font-smoothing: antialiased;
   }
 
   img {
