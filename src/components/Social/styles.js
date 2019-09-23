@@ -5,6 +5,8 @@ import colors from '~/styles/colors'
 export const SocialWrapper = styled.nav`
   margin: 2rem 2rem 0;
   width: 100%;
+  border-top: 1px solid ${colors.dark};
+  padding-top: 1rem;
 `
 
 export const SocialList = styled.ul`
@@ -17,7 +19,7 @@ export const SocialList = styled.ul`
 export const SocialItem = styled.li``
 
 export const SocialLink = styled.a`
-  color: ${colors.white};
+  color: ${colors.lighter};
   text-decoration: none;
   transition: color 0.3s;
 
@@ -27,7 +29,7 @@ export const SocialLink = styled.a`
 `
 
 export const IconWrapper = styled.div`
-  fill: ${colors.white};
+  fill: ${colors.lighter};
   height: 1.5rem;
   width: 1.5rem;
 `

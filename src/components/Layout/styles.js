@@ -10,7 +10,7 @@ export const LayoutWrapper = styled.section`
 `
 
 export const LayoutMain = styled.main`
-  background: ${colors.white};
+  background: ${colors.lighter};
   grid-area: main;
   min-height: 100vh;
   padding: 2rem 1rem 1rem 4rem;

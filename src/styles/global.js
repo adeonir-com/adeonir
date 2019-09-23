@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
+import colors from './colors'
+
 const GlogalStyle = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,10 +56,11 @@ const GlogalStyle = createGlobalStyle`
   }
 
   body {
-    background: #282a36;
+    background: ${colors.lighter};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 100%;
+    font-size: 1rem;
     line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
   }
 
