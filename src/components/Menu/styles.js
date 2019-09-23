@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
+import colors from '~/styles/colors'
+
 export const MenuWrapper = styled.nav`
   flex: 1;
 `
@@ -15,16 +17,16 @@ export const MenuItem = styled.li`
   padding: 0.5rem 0;
 
   .active {
-    color: #6b6bff;
+    color: ${colors.accent};
   }
 `
 
 export const MenuLink = styled(Link)`
-  color: #f8f9fa;
+  color: ${colors.white};
   text-decoration: none;
   transition: color 0.3s;
 
   &:hover {
-    color: #6b6bff;
+    color: ${colors.accent};
   }
 `

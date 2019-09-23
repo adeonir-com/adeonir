@@ -16,8 +16,8 @@ const links = [
     url: '/servicos/',
   },
   {
-    label: 'Sobre Mim',
-    url: '/sobre-mim/',
+    label: 'Sobre',
+    url: '/sobre/',
   },
 ]
 

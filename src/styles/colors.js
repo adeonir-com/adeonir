@@ -1,17 +1,19 @@
 const colors = {
-  black: '#252a41',
+  black: '#000000',
+  white: '#ffffff',
+  darker: '#252a41',
   dark: '#4a4d63',
   gray: '#787b8c',
   light: '#cfd2de',
-  white: '#f6f8f9',
-  accent: '#6b8cff',
+  lighter: '#f6f8f9',
+  accent: '#54a0ff',
   cyan: '#72c2f0',
   green: '#3ccc93',
   purple: '#9883e5',
-  pink: '#f54c71',
-  red: '#cd434a',
-  orange: '#f2b846',
-  yellow: '#f1fa8c'
+  pink: '#ff9ff3',
+  red: '#ff6348',
+  orange: '#fdcb6e',
+  yellow: '#f1fa8c',
 }
 
 export default colors
