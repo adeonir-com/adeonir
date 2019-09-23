@@ -7,6 +7,7 @@ export const SidebarWrapper = styled(Scrollbar)`
   background: ${colors.darker};
   grid-area: sidebar;
   height: 100vh;
+  padding: 0 2rem;
   width: 20rem;
 
   .os-content {
@@ -14,7 +15,6 @@ export const SidebarWrapper = styled(Scrollbar)`
     background: ${colors.darker};
     display: flex;
     flex-direction: column;
-    padding: 0 2rem;
     text-align: center;
   }
 `
