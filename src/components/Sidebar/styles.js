@@ -1,16 +1,20 @@
 import styled from 'styled-components'
+import { OverlayScrollbarsComponent as Scrollbar } from 'overlayscrollbars-react'
 
 import colors from '~/styles/colors'
 
-export const SidebarWrapper = styled.aside`
-  align-items: center;
+export const SidebarWrapper = styled(Scrollbar)`
   background: ${colors.darker};
-  display: flex;
-  flex-direction: column;
   grid-area: sidebar;
   height: 100vh;
-  padding: 2rem;
-  text-align: center;
   width: 20rem;
-  overflow-y: auto;
+
+  .os-content {
+    align-items: center;
+    background: ${colors.darker};
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
+  }
 `

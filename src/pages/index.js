@@ -5,6 +5,8 @@ import Seo from '../components/Seo'
 
 import * as S from '../styles/pages'
 
+import '../../node_modules/overlayscrollbars/css/OverlayScrollbars.css'
+
 const IndexPage = () => (
   <Layout>
     <Seo title='Home' />

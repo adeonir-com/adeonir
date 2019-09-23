@@ -10,6 +10,7 @@ export const ProfileWrapper = styled.section`
   flex-direction: column;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  padding-top: 2rem;
   width: 100%;
 `
 

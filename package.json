@@ -5,7 +5,7 @@
   "version": "3.0.0",
   "author": "Adeonir Kohl <adeonir@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.13.73",
+    "gatsby": "^2.15.21",
     "gatsby-image": "^2.2.10",
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-offline": "^3.0.8",
@@ -14,12 +14,14 @@
     "gatsby-plugin-styled-components": "^3.1.4",
     "gatsby-source-filesystem": "^2.1.11",
     "gatsby-transformer-sharp": "^2.2.7",
+    "overlayscrollbars": "^1.9.1",
+    "overlayscrollbars-react": "^0.1.0",
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.3.2",
+    "styled-components": "^4.4.0",
     "styled-icons": "^8.4.0"
   },
   "devDependencies": {

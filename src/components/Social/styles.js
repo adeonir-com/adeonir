@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import colors from '~/styles/colors'
 
 export const SocialWrapper = styled.nav`
-  margin: 2rem 2rem 0;
+  margin: 2rem;
   width: 100%;
   border-top: 1px solid ${colors.dark};
   padding-top: 1rem;
