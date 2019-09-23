@@ -1,14 +1,16 @@
 import styled from 'styled-components'
 
+import colors from '~/styles/colors'
+
 export const PageWrapper = styled.section`
   h1 {
-    color: #44475a;
+    color: ${colors.darker};
     font-size: 2.25rem;
     font-weight: 600;
     text-transform: uppercase;
 
     &::after {
-      background: #6b8cff;
+      background: ${colors.accent};
       content: '';
       display: block;
       height: 2px;
