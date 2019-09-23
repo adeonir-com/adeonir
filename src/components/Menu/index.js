@@ -1,20 +1,19 @@
 import React from 'react'
-
-import links from './content'
+import { Search } from 'styled-icons/boxicons-regular/Search'
+import { Bulb } from 'styled-icons/boxicons-regular/Bulb'
 
 import * as S from './styles'
 
 const Menu = () => (
   <S.MenuWrapper>
-    <S.MenuList>
-      {links.map((link, index) => (
-        <S.MenuItem key={index}>
-          <S.MenuLink to={link.url} activeClassName='active'>
-            {link.label}
-          </S.MenuLink>
-        </S.MenuItem>
-      ))}
-    </S.MenuList>
+    <S.MenuLink to='/search' title='Pesquisar'>
+      <S.MenuItem title='Mudar o tema'>
+        <Search />
+      </S.MenuItem>
+    </S.MenuLink>
+    <S.MenuItem title='Mudar o tema'>
+      <Bulb />
+    </S.MenuItem>
   </S.MenuWrapper>
 )
 

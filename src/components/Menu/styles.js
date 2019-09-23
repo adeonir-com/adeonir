@@ -3,30 +3,23 @@ import { Link } from 'gatsby'
 
 import colors from '~/styles/colors'
 
-export const MenuWrapper = styled.nav`
-  flex: 1;
-`
-
-export const MenuList = styled.ul`
-  font-size: 1.2rem;
-  font-weight: 300;
-  list-style: none;
-`
-
-export const MenuItem = styled.li`
-  padding: 0.5rem 0;
-
-  .active {
-    color: ${colors.accent};
-  }
+export const MenuWrapper = styled.aside`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-area: menu;
+  width: 3rem;
 `
 
 export const MenuLink = styled(Link)`
-  color: ${colors.lighter};
-  text-decoration: none;
-  transition: color 0.3s;
+  display: block;
+`
 
-  &:hover {
-    color: ${colors.accent};
-  }
+export const MenuItem = styled.span`
+  color: ${colors.gray};
+  cursor: pointer;
+  display: block;
+  height: 3rem;
+  padding: 1rem;
+  width: 3rem;
 `

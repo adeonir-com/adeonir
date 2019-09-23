@@ -4,9 +4,9 @@ import colors from '~/styles/colors'
 
 export const LayoutWrapper = styled.section`
   display: grid;
-  grid-template-columns: 20rem 1fr;
+  grid-template-columns: 20rem 1fr 3rem;
   grid-template-rows: 1fr;
-  grid-template-areas: "sidebar main";
+  grid-template-areas: 'sidebar main menu';
 `
 
 export const LayoutMain = styled.main`
