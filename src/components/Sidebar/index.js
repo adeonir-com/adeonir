@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Profile from '../Profile'
-import Menu from '../Menu'
+import Navigation from '../Navigation'
 import Social from '../Social'
 
 import * as S from './styles'
@@ -9,7 +9,7 @@ import * as S from './styles'
 const Sidebar = () => (
   <S.SidebarWrapper>
     <Profile />
-    <Menu />
+    <Navigation />
     <Social />
   </S.SidebarWrapper>
 )
