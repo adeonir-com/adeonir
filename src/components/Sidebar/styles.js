@@ -8,6 +8,7 @@ export const SidebarWrapper = styled(Scrollbar)`
   grid-area: sidebar;
   height: 100vh;
   padding: 0 2rem;
+  position: fixed;
   width: 20rem;
 
   .os-content {

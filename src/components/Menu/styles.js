@@ -8,6 +8,8 @@ export const MenuWrapper = styled.aside`
   display: flex;
   flex-direction: column;
   grid-area: menu;
+  position: fixed;
+  right: 0;
   width: 3rem;
 `
 
@@ -16,15 +18,16 @@ export const MenuLink = styled(Link)`
 `
 
 export const MenuItem = styled.span`
+  align-items: center;
   color: ${colors.darker};
   cursor: pointer;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 3rem;
+  justify-content: center;
+  transition: color 0.3s;
   width: 3rem;
 
-  &:hover svg {
-    fill: ${colors.accent};
+  &:hover {
+    color: ${colors.accent};
   }
 `
