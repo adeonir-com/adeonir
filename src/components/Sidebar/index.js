@@ -7,11 +7,7 @@ import Social from '../Social'
 import * as S from './styles'
 
 const Sidebar = () => (
-  <S.SidebarWrapper
-    options={{
-      className: 'os-theme-light',
-    }}
-  >
+  <S.SidebarWrapper>
     <Profile />
     <Navigation />
     <Social />
