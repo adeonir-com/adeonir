@@ -6,6 +6,7 @@ import colors from '~/styles/colors'
 export const PostItemLink = styled(Link)`
   color: ${colors.dark};
   display: flex;
+  margin-bottom: 2rem;
   text-decoration: none;
 
   &:hover {
@@ -17,7 +18,6 @@ export const PostItemWrapper = styled.section`
   border-radius: 0.5rem;
   display: flex;
   padding: 2rem;
-  margin-bottom: 2rem;
   width: 100%;
   cursor: pointer;
   transition: all 0.3s ease;

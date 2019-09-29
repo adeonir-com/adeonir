@@ -11,7 +11,10 @@ export const LayoutWrapper = styled.div`
 
 export const LayoutMain = styled.main`
   background: ${colors.lighter};
+  display: flex;
+  flex-direction: column;
   grid-area: main;
+  justify-content: space-between;
   min-height: 100vh;
   padding: 2rem 1rem 1rem 4rem;
 `
