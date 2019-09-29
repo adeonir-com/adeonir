@@ -11,7 +11,7 @@ const HomePage = () => (
   <Layout>
     <Seo title='Home' />
     <S.PageWrapper>
-      <h1>Home</h1>
+      <S.PageTitle>Home</S.PageTitle>
     </S.PageWrapper>
   </Layout>
 )

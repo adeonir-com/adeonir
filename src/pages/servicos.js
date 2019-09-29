@@ -9,7 +9,7 @@ const ServicesPage = () => (
   <Layout>
     <Seo title='Serviços' />
     <S.PageWrapper>
-      <h1>Serviços</h1>
+      <S.PageTitle>Serviços</S.PageTitle>
     </S.PageWrapper>
   </Layout>
 )

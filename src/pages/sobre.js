@@ -9,7 +9,7 @@ const AboutPage = () => (
   <Layout>
     <Seo title='Sobre Mim' />
     <S.PageWrapper>
-      <h1>Sobre Mim</h1>
+      <S.PageTitle>Sobre Mim</S.PageTitle>
     </S.PageWrapper>
   </Layout>
 )

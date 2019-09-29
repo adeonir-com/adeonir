@@ -9,7 +9,7 @@ const NotFoundPage = () => (
   <Layout>
     <Seo title='404: Not found' />
     <S.PageWrapper>
-      <h1>404</h1>
+      <S.PageTitle>404</S.PageTitle>
     </S.PageWrapper>
   </Layout>
 )

@@ -9,7 +9,7 @@ const SearchPage = () => (
   <Layout>
     <Seo title='Search' />
     <S.PageWrapper>
-      <h1>Search</h1>
+      <S.PageTitle>Search</S.PageTitle>
     </S.PageWrapper>
   </Layout>
 )
