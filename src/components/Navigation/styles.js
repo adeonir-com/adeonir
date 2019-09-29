@@ -4,7 +4,14 @@ import { Link } from 'gatsby'
 import colors from '~/styles/colors'
 
 export const NavigationWrapper = styled.nav`
+  display: flex;
+  justify-content: center;
   flex: 1;
+  border-bottom: 1px solid ${colors.dark};
+  border-top: 1px solid ${colors.dark};
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem 0;
 `
 
 export const NavigationList = styled.ul`
