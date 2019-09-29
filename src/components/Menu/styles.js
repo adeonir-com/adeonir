@@ -16,10 +16,15 @@ export const MenuLink = styled(Link)`
 `
 
 export const MenuItem = styled.span`
-  color: ${colors.gray};
+  color: ${colors.darker};
   cursor: pointer;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 3rem;
-  padding: 1rem;
   width: 3rem;
+
+  &:hover svg {
+    fill: ${colors.accent};
+  }
 `
