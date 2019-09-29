@@ -1,31 +1,45 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { PriceTag } from 'styled-icons/icomoon/PriceTag'
 import { Clock2 as Clock } from 'styled-icons/icomoon/Clock2'
 
 import * as S from './styles'
 
-const PostItem = () => (
-  <S.PostItemLink to='/404'>
+const PostItem = ({
+  slug,
+  category,
+  background,
+  title,
+  text,
+  date,
+  timeToRead,
+}) => (
+  <S.PostItemLink to={slug}>
     <S.PostItemWrapper>
       <S.PostItemInfo>
         <S.PostItemTag>
           <PriceTag size={20} />
-          JavaScript
+          {category}
         </S.PostItemTag>
-        <S.PostItemTitle background='#E5E942'>
-          Ipsum nostrud voluptate magna
-        </S.PostItemTitle>
-        <S.PostItemText>
-          Proident qui anim dolore non culpa in mollit ipsum incididunt tempor
-          aliqua dolor nulla pariatur magna do adipisicing ut consequat
-        </S.PostItemText>
+        <S.PostItemTitle background={background}>{title}</S.PostItemTitle>
+        <S.PostItemText>{text}</S.PostItemText>
         <S.PostItemDate>
           <Clock size={20} />
-          February 17, 2014 7:00 AM - 3 min reading
+          {date} - {timeToRead} min reading
         </S.PostItemDate>
       </S.PostItemInfo>
     </S.PostItemWrapper>
   </S.PostItemLink>
 )
+
+PostItem.propTypes = {
+  slug: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  background: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  timeToRead: PropTypes.string.isRequired,
+}
 
 export default PostItem

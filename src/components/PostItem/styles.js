@@ -42,7 +42,8 @@ export const PostItemTitle = styled.h1`
     display: block;
     width: 7rem;
     height: 1.8rem;
-    background: ${props => props.background};
+    background: ${props =>
+      props.background ? props.background : colors.accent};
     content: '';
     position: absolute;
     left: -8rem;
@@ -70,7 +71,7 @@ export const PostItemTag = styled.div`
 
 export const PostItemDate = styled.time`
   color: ${colors.gray};
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
   font-weight: bold;
