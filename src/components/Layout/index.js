@@ -12,8 +12,8 @@ const Layout = ({ children }) => {
     <S.LayoutWrapper>
       <GlobalSytles />
       <Sidebar />
-      <Menu />
       <S.LayoutMain>{children}</S.LayoutMain>
+      <Menu />
     </S.LayoutWrapper>
   )
 }

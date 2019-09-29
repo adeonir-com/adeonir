@@ -4,14 +4,14 @@ import { Link } from 'gatsby'
 import colors from '~/styles/colors'
 
 export const NavigationWrapper = styled.nav`
-  display: flex;
-  justify-content: center;
-  flex: 1;
   border-bottom: 1px solid ${colors.dark};
   border-top: 1px solid ${colors.dark};
-  width: 100%;
-  padding: 1rem 0;
+  display: flex;
+  flex: 1;
+  justify-content: center;
   margin: 1rem 0;
+  padding: 1rem 0;
+  width: 100%;
 `
 
 export const NavigationList = styled.ul`
@@ -22,6 +22,7 @@ export const NavigationList = styled.ul`
 
 export const NavigationItem = styled.li`
   padding: 0.5rem 0;
+  text-align: center;
 
   .active {
     color: ${colors.accent};
