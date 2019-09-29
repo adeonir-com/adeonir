@@ -7,7 +7,7 @@ import * as S from '../styles/pages'
 
 import '../../node_modules/overlayscrollbars/css/OverlayScrollbars.css'
 
-const IndexPage = () => (
+const HomePage = () => (
   <Layout>
     <Seo title='Home' />
     <S.PageWrapper>
@@ -16,4 +16,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default HomePage

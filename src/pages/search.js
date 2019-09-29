@@ -5,13 +5,13 @@ import Seo from '../components/Seo'
 
 import * as S from '../styles/pages'
 
-const AboutPage = () => (
+const SearchPage = () => (
   <Layout>
-    <Seo title='Sobre Mim' />
+    <Seo title='Search' />
     <S.PageWrapper>
-      <h1>Sobre Mim</h1>
+      <h1>Search</h1>
     </S.PageWrapper>
   </Layout>
 )
 
-export default AboutPage
+export default SearchPage

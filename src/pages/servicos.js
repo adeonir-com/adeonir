@@ -5,7 +5,7 @@ import Seo from '../components/Seo'
 
 import * as S from '../styles/pages'
 
-const IndexPage = () => (
+const ServicesPage = () => (
   <Layout>
     <Seo title='Serviços' />
     <S.PageWrapper>
@@ -14,4 +14,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default ServicesPage

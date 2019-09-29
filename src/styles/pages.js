@@ -7,6 +7,7 @@ export const PageWrapper = styled.section`
     color: ${colors.darker};
     font-size: 2.25rem;
     font-weight: 600;
+    margin-bottom: 3rem;
     text-transform: uppercase;
 
     &::after {
