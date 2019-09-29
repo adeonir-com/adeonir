@@ -4,14 +4,10 @@ import { Link } from 'gatsby'
 import colors from '~/styles/colors'
 
 export const ProfileWrapper = styled.section`
-  border-bottom: 1px solid ${colors.dark};
   color: ${colors.lighter};
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
   padding-top: 2rem;
-  width: 100%;
 `
 
 export const ProfileLink = styled(Link)`

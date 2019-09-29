@@ -3,10 +3,8 @@ import styled from 'styled-components'
 import colors from '~/styles/colors'
 
 export const SocialWrapper = styled.nav`
-  margin: 2rem;
+  padding-bottom: 1rem;
   width: 100%;
-  border-top: 1px solid ${colors.dark};
-  padding-top: 1rem;
 `
 
 export const SocialList = styled.ul`
