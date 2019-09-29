@@ -12,6 +12,9 @@ const BlogPage = () => (
     <S.PageWrapper>
       <S.PageTitle>Blog</S.PageTitle>
       <PostItem />
+      <PostItem />
+      <PostItem />
+      <PostItem />
     </S.PageWrapper>
   </Layout>
 )

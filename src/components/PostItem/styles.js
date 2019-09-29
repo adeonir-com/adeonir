@@ -1,16 +1,83 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
-export const PostItemWrapper = styled.section``
+import colors from '~/styles/colors'
 
-export const PostItemLink = styled(Link)``
+export const PostItemLink = styled(Link)`
+  color: ${colors.dark};
+  display: flex;
+  text-decoration: none;
 
-export const PostItemTag = styled.div``
+  &:hover {
+    color: ${colors.accent};
+  }
+`
 
-export const PostItemInfo = styled.div``
+export const PostItemWrapper = styled.section`
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
-export const PostItemDate = styled.time``
+  &:hover {
+    background: ${colors.white};
+  }
+`
 
-export const PostItemTitle = styled.h1``
+export const PostItemInfo = styled.div`
+  padding-left: 8rem;
+`
 
-export const PostItemText = styled.p``
+export const PostItemTitle = styled.h1`
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: ${colors.dark};
+  margin: 0.5rem 0 1rem;
+  position: relative;
+
+  &::before {
+    display: block;
+    width: 7rem;
+    height: 1.8rem;
+    background: ${props => props.background};
+    content: '';
+    position: absolute;
+    left: -8rem;
+    top: 0.25rem;
+  }
+`
+
+export const PostItemText = styled.p`
+  color: ${colors.dark};
+  line-height: 1.3;
+`
+
+export const PostItemTag = styled.div`
+  color: ${colors.gray};
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  svg {
+    margin-right: 0.5rem;
+  }
+`
+
+export const PostItemDate = styled.time`
+  color: ${colors.gray};
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 2rem;
+
+  svg {
+    margin-right: 0.5rem;
+  }
+`
