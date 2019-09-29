@@ -9,8 +9,8 @@ import * as S from '../styles/pages'
 
 const BlogPage = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
-    query getPosts {
-      allMarkdownRemark {
+    query GetAllPosts {
+      allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
         edges {
           node {
             id
@@ -31,16 +31,14 @@ const BlogPage = () => {
     }
   `)
 
-  const postList = allMarkdownRemark.edges
-
-  // console.log(allMarkdownRemark)
+  const posts = allMarkdownRemark.edges
 
   return (
     <Layout>
       <Seo title='Blog' />
       <S.PageWrapper>
         <S.PageTitle>Blog</S.PageTitle>
-        {postList.map(
+        {posts.map(
           ({
             node: {
               frontmatter: { category, background, title, text, date },

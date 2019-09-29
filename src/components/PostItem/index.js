@@ -39,7 +39,7 @@ PostItem.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  timeToRead: PropTypes.string.isRequired,
+  timeToRead: PropTypes.number.isRequired,
 }
 
 export default PostItem

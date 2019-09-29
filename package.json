@@ -15,8 +15,6 @@
     "gatsby-source-filesystem": "^2.1.11",
     "gatsby-transformer-remark": "^2.6.26",
     "gatsby-transformer-sharp": "^2.2.7",
-    "overlayscrollbars": "^1.9.1",
-    "overlayscrollbars-react": "^0.1.0",
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",

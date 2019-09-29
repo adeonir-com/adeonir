@@ -1,6 +1,6 @@
 ---
 category: CSS
-background: '#ff9ff3'
+background: '#96ceee'
 title: 'Ipsum nostrud voluptate magna'
 text: 'Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.'
 date: 2019-09-30 09:38:43

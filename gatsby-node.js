@@ -28,3 +28,33 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
+
+// Create pages dinamically
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+
+  return graphql(`
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve('./src/templates/blog-post.js'),
+        context: {
+          slug: node.fields.slug,
+        },
+      })
+    })
+  })
+}
