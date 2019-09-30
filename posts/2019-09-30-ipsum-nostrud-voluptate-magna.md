@@ -2,13 +2,11 @@
 category: CSS
 background: '#96ceee'
 title: 'Ipsum nostrud voluptate magna'
-text: 'Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.'
+description: 'Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.'
 date: 2019-09-30 09:38:43
 ---
 
-# Ipsum nostrud voluptate magna
-
-## Tibi iam cristati resonant aliis Inachides siquid
+![Desert](/assets/uploads/desert.jpg)
 
 Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.
 Quisquis extra postquam, et arbor erat accepere levati criminibusque! Ultra orbe

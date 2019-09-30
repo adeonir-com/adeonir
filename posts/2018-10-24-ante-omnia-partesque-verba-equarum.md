@@ -1,15 +1,10 @@
 ---
-category: JS
-background: '#e5e942'
+category: HTML
+background: '#ff6348'
 title: 'Ante omnia partesque verba equarum'
-text: 'Lorem markdownum Appenninus Pico, vitta secuta mihi laevi gnato natis et anus
-tramite salutifera muneraque efferor adnuit. '
-date: 2019-09-30 09:38:43
+description: 'Lorem markdownum Appenninus Pico, vitta secuta mihi laevi gnato natis et anus tramite salutifera muneraque efferor adnuit. '
+date: 2018-10-24 09:38:43
 ---
-
-# Ante omnia partesque verba equarum
-
-## Nomen bacae pro ab ire devovitque maius
 
 Lorem markdownum Appenninus Pico, vitta secuta mihi laevi gnato natis et anus
 tramite salutifera muneraque efferor adnuit. Obsessa erectus nymphae una nos

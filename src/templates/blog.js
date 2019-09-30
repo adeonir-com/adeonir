@@ -26,7 +26,7 @@ const Blog = props => {
         {posts.map(
           ({
             node: {
-              frontmatter: { category, background, title, text, date },
+              frontmatter: { category, background, title, description, date },
               timeToRead,
               id,
               fields: { slug },
@@ -38,7 +38,7 @@ const Blog = props => {
               category={category}
               background={background}
               title={title}
-              text={text}
+              description={description}
               date={date}
               timeToRead={timeToRead}
             />
@@ -73,9 +73,9 @@ export const query = graphql`
           frontmatter {
             background
             category
-            date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
-            text
             title
+            description
+            date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
           }
           timeToRead
         }

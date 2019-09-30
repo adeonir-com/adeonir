@@ -10,7 +10,7 @@ export const PageWrapper = styled.section`
 export const PageTitle = styled.h1`
   color: ${colors.darker};
   font-size: 2.25rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 3rem;
   text-transform: uppercase;
 
@@ -18,9 +18,9 @@ export const PageTitle = styled.h1`
     background: ${colors.accent};
     content: '';
     display: block;
-    height: 2px;
+    height: 4px;
     margin-left: -1rem;
     margin-top: 0.5rem;
-    width: 20rem;
+    width: 30rem;
   }
 `

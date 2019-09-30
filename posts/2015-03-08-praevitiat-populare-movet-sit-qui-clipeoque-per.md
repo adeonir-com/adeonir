@@ -1,15 +1,11 @@
 ---
-category: HTML
-background: '#ff6348'
+category: CSS
+background: '#96ceee'
 title: 'Praevitiat populare movet sit qui clipeoque per'
-text: 'Relinquo Coroniden ab trunco auctor o toris bacae condiderant _confidit
+description: 'Relinquo Coroniden ab trunco auctor o toris bacae condiderant _confidit
 pressus_.'
 date: 2015-03-08 15:21:32
 ---
-
-# Praevitiat populare movet sit qui clipeoque per
-
-## Erat suorum Chrysenque
 
 [Lorem markdownum](http://ianthetraxit.io/auctaque) non solebant sunt, est his
 tuis [pronus](http://spatiosi-in.com/fuit-titanida) talia sed, in primus me

@@ -10,7 +10,7 @@ const PostItem = ({
   category,
   background,
   title,
-  text,
+  description,
   date,
   timeToRead,
 }) => (
@@ -22,10 +22,10 @@ const PostItem = ({
           {category}
         </S.PostItemTag>
         <S.PostItemTitle background={background}>{title}</S.PostItemTitle>
-        <S.PostItemText>{text}</S.PostItemText>
+        <S.PostItemDescription>{description}</S.PostItemDescription>
         <S.PostItemDate>
           <Clock size={20} />
-          {date} - {timeToRead} min reading
+          {date} - {timeToRead} minutos de leitura
         </S.PostItemDate>
       </S.PostItemInfo>
     </S.PostItemWrapper>
@@ -37,7 +37,7 @@ PostItem.propTypes = {
   category: PropTypes.string.isRequired,
   background: PropTypes.string,
   title: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   timeToRead: PropTypes.number.isRequired,
 }

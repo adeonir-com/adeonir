@@ -2,13 +2,9 @@
 category: Music
 background: '#3ccc93'
 title: 'Lupus sanguine curvamine virus'
-text: 'Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.'
+description: 'Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.'
 date: 2017-12-05 19:52:33
 ---
-
-# Lupus sanguine curvamine virus
-
-## Legati et multa
 
 Lorem markdownum tamen, turba quis, nemorum maduerunt revertitur in quam opem
 seu rauco profundum posito passa Philomela rapuit. Aeque persequitur, edere

@@ -2,14 +2,9 @@
 category: CSS
 background: '#96ceee'
 title: 'Marmore satis accipit suo veri'
-text: 'Lorem markdownum illa subibat quibus est, et his est silet pollice virtutem
-metu, poterit.'
+description: 'Lorem markdownum illa subibat quibus est, et his est silet pollice virtutem metu, poterit.'
 date: 2016-08-13 21:28:43
 ---
-
-# Marmore satis accipit suo veri
-
-## Cuius valebam te gemino dicere teneas potentia
 
 Lorem markdownum illa subibat quibus est, et his est silet pollice virtutem
 metu, poterit. Licet rursus fuerat [manifesta](http://www.iurisflumina.com/adde)

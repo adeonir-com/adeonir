@@ -2,14 +2,9 @@
 category: Misc
 background: '#ff9ff3'
 title: 'Servatum et ignibus nymphas e caduca fretoque'
-text: 'Lorem markdownum quoque, nostri, tela iamque ad antiquas, commentaque tecum
-revocare bene, tangit.'
-date: 2019-09-30 09:38:43
+description: 'Lorem markdownum quoque, nostri, tela iamque ad antiquas, commentaque tecum revocare bene, tangit.'
+date: 2019-05-02 09:38:43
 ---
-
-# Servatum et ignibus nymphas e caduca fretoque
-
-## Tecta superfusis incognita mihi aliquid
 
 Lorem markdownum quoque, nostri, tela iamque ad antiquas, commentaque tecum
 revocare bene, tangit. Argus nomen adcubuere vicem vertice ferunt viroque legit

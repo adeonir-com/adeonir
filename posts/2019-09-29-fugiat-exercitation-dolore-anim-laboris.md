@@ -2,14 +2,9 @@
 category: JS
 background: '#e5e942'
 title: 'Fugiat exercitation dolore anim laboris'
-text: 'Lorem markdownum nescia lectum loquendo Phrygiae in finiat certet additus
-frustra. Stant is oscula quoque ferrum?'
+description: 'Lorem markdownum nescia lectum loquendo Phrygiae in finiat certet additus frustra. Stant is oscula quoque ferrum?'
 date: 2019-09-29 11:24:58
 ---
-
-# Fugiat exercitation dolore anim laboris
-
-## Tulit sucos solido praecipitem licet doleres vulgata
 
 Lorem markdownum nescia lectum loquendo Phrygiae in finiat certet additus
 frustra. Stant is oscula quoque ferrum?

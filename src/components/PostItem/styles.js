@@ -32,8 +32,8 @@ export const PostItemInfo = styled.div`
 `
 
 export const PostItemTitle = styled.h1`
-  font-size: 2.25rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 300;
   color: ${colors.dark};
   margin: 0.5rem 0 1rem;
   position: relative;
@@ -41,19 +41,20 @@ export const PostItemTitle = styled.h1`
   &::before {
     display: block;
     width: 7rem;
-    height: 1.8rem;
+    height: 2.6rem;
     background: ${props =>
       props.background ? props.background : colors.accent};
     content: '';
     position: absolute;
     left: -8rem;
-    top: 0.25rem;
+    top: 0.3rem;
   }
 `
 
-export const PostItemText = styled.p`
+export const PostItemDescription = styled.p`
   color: ${colors.dark};
-  line-height: 1.3;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 `
 
 export const PostItemTag = styled.div`
@@ -61,7 +62,7 @@ export const PostItemTag = styled.div`
   font-size: 0.9rem;
   display: flex;
   align-items: center;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 
   svg {
@@ -74,7 +75,7 @@ export const PostItemDate = styled.time`
   font-size: 0.8rem;
   display: flex;
   align-items: center;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   margin-top: 2rem;
 
