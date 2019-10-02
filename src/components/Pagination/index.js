@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 import { LeftArrowAlt as LeftArrow } from 'styled-icons/boxicons-regular/LeftArrowAlt'
 import { RightArrowAlt as RightArrow } from 'styled-icons/boxicons-regular/RightArrowAlt'
 
@@ -16,25 +15,25 @@ const Pagination = ({
 }) => (
   <S.PaginationWrapper>
     {!isFirst ? (
-      <Link to={prevPage}>
+      <S.PaginationButton to={prevPage}>
         <LeftArrow size={24} />
         Página Anterior
-      </Link>
+      </S.PaginationButton>
     ) : (
-      'Primeira Página'
+      <S.PaginationFirstPage>Primeira Página</S.PaginationFirstPage>
     )}
 
-    <p>
+    <S.PaginationCurrent>
       {currentPage} de {numPages}
-    </p>
+    </S.PaginationCurrent>
 
     {!isLast ? (
-      <Link to={nextPage}>
+      <S.PaginationButton position to={nextPage}>
         Próxima Página
         <RightArrow size={24} />
-      </Link>
+      </S.PaginationButton>
     ) : (
-      'Última página'
+      <S.PaginationLastPage position>Última página</S.PaginationLastPage>
     )}
   </S.PaginationWrapper>
 )
