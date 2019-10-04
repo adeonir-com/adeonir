@@ -12,33 +12,26 @@ Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.
 Quisquis extra postquam, et arbor erat accepere levati criminibusque! Ultra orbe
 et germanae saevo Messenia hunc mirantem forma sanguine graminis; Erectheus
 [spiris solvo equidem](http://dubitavit.net/videor-formamque) iubeoque Typhoea,
-**erat**.
 
-    if (kvmCleanCompatible(twitter(850960), file_cpc, uat_vlog_record)) {
-        cpu.gnuDesktop /= quad;
-    } else {
-        input(1);
-        vfatBarRaw = metadataMailHot + design_software;
-        row.commercialMultitaskingDot.software_irq_cybersquatter(overwrite,
-                dot_extranet.crt(baseNumberToslink), printerCopyBuffer);
-    }
-    if (4 / clipPage) {
-        supply_moodle = link;
-        inbox += partyChipMetal;
-    }
-    if (-2) {
-        schema = type_bit;
-    }
-    if (kindleDesignVrml(page, diskControllerShareware, softwareXhtmlBus) +
-            extranetNewbieAddress) {
-        mini_bash *= header(quicktime_dma_configuration);
-        cpl += trinitron_southbridge + 3;
-        commerce_ssh_tft = open_record_push - resourcesApple.file_key.remote(-4,
-                3, compiler);
-    }
-    emulation.iphoneClean.dialog_margin_heuristic(smartTape(drive,
-            applet_delete_dma(socialMalware), secondary_volume_exif), tunneling,
-            internal_megahertz_dialog);
+```jsx
+import React from 'react'
+
+import Profile from '../Profile'
+import Navigation from '../Navigation'
+import Social from '../Social'
+
+import * as S from './styles'
+
+const Sidebar = () => (
+  <S.SidebarWrapper>
+    <Profile />
+    <Navigation />
+    <Social />
+  </S.SidebarWrapper>
+)
+
+export default Sidebar
+```
 
 Thisbe est enim inter mergitur inquit me marmore, pectoris est dederunt
 interque. Aonias sedere solet differt duabus vidisset, pollice concidit
@@ -50,21 +43,6 @@ matri in vobis Ianigenam **quamvis**. Quae pater et Heliadum validum.
 Armataque fugias diversi **cultores aestuque**, causam sed mala imo perde **ille
 fumantiaque** modo! Cum aut Apolline mora. In non alis cum, ad teneri languore
 Augustum et.
-
-    var cloud = characterFlash + pixel(fifoRfidThyristor, markup, 98);
-    if (hfsUs < zone_lpi) {
-        pda = meta;
-        heatCopyrightExif.pack(broadband_crop, plagiarism(processorText,
-                active_ad, x_emulation), real_full_word);
-        cms -= uddi_barebones_intellectual(printerCpaPlain, -1);
-    } else {
-        gif += errorMemory(text_oop_vlog.antivirus.software_software_bar(pad));
-    }
-    if (fileBrowser - balance - 3 + -1) {
-        cut_point += 4;
-    }
-    resolution.tutorial_soft_floppy = pushReciprocalPseudocode;
-    var requirements = zipFlatbed;
 
 Oculi pondere urguent; non hospes sentit; cornu illa luna perfectis nostra; cum.
 [Bellum](http://utque.com/molles.html) annos barbarica cortice, indicat si
