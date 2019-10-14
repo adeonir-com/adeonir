@@ -12,6 +12,7 @@ const postsQuery = `{
           category
           title
           description
+          background
           date_timestamp: date
           date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
         }
