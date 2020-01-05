@@ -4,14 +4,9 @@ import { Link } from 'gatsby'
 import colors from '~/styles/colors'
 
 export const PostItemLink = styled(Link)`
-  color: ${colors.dark};
   display: flex;
   margin-bottom: 2rem;
   text-decoration: none;
-
-  &:hover {
-    color: ${colors.accent};
-  }
 `
 
 export const PostItemWrapper = styled.section`
@@ -23,7 +18,7 @@ export const PostItemWrapper = styled.section`
   transition: all 0.3s ease;
 
   &:hover {
-    background: ${colors.white};
+    background: var(--post);
   }
 `
 
@@ -34,7 +29,7 @@ export const PostItemInfo = styled.div`
 export const PostItemTitle = styled.h1`
   font-size: 3rem;
   font-weight: 300;
-  color: ${colors.dark};
+  color: var(--title);
   margin: 0.5rem 0 1rem;
   position: relative;
 
@@ -52,13 +47,13 @@ export const PostItemTitle = styled.h1`
 `
 
 export const PostItemDescription = styled.p`
-  color: ${colors.dark};
+  color: var(--title);
   font-size: 1.2rem;
   line-height: 1.5rem;
 `
 
 export const PostItemTag = styled.div`
-  color: ${colors.gray};
+  color: var(--neutral);
   font-size: 0.9rem;
   display: flex;
   align-items: center;
@@ -71,7 +66,7 @@ export const PostItemTag = styled.div`
 `
 
 export const PostItemDate = styled.time`
-  color: ${colors.gray};
+  color: var(--neutral);
   font-size: 0.8rem;
   display: flex;
   align-items: center;

@@ -10,7 +10,7 @@ export const HitItemLink = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    color: ${colors.accent};
+    color: var(--accent);
   }
 `
 
@@ -34,7 +34,7 @@ export const HitItemInfo = styled.div`
 export const HitItemTitle = styled.h1`
   font-size: 2rem;
   font-weight: 300;
-  color: ${colors.dark};
+  color: var(--title);
   margin: 0.5rem 0;
   position: relative;
 
@@ -52,13 +52,13 @@ export const HitItemTitle = styled.h1`
 `
 
 export const HitItemDescription = styled.p`
-  color: ${colors.dark};
+  color: var(--text);
   font-size: 1rem;
   line-height: 1.5rem;
 `
 
 export const HitItemTag = styled.div`
-  color: ${colors.gray};
+  color: var(--neutral);
   font-size: 0.9rem;
   display: flex;
   align-items: center;
