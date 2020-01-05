@@ -1,11 +1,8 @@
 import styled from 'styled-components'
 
-import colors from '~/styles/colors'
-
 export const SidebarWrapper = styled.aside`
   align-items: center;
-  background: ${colors.darker};
-  background: ${colors.darker};
+  background: var(--sidebar);
   display: flex;
   flex-direction: column;
   grid-area: sidebar;

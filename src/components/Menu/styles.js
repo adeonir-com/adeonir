@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
-import colors from '~/styles/colors'
-
 export const MenuWrapper = styled.aside`
   align-items: center;
   display: flex;
@@ -19,7 +17,7 @@ export const MenuLink = styled(Link)`
 
 export const MenuItem = styled.span`
   align-items: center;
-  color: ${colors.darker};
+  color: var(--button);
   cursor: pointer;
   display: flex;
   height: 3rem;
@@ -28,6 +26,6 @@ export const MenuItem = styled.span`
   width: 3rem;
 
   &:hover {
-    color: ${colors.accent};
+    color: var(--accent);
   }
 `

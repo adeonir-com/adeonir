@@ -4,8 +4,8 @@ import { Link } from 'gatsby'
 import colors from '~/styles/colors'
 
 export const NavigationWrapper = styled.nav`
-  border-bottom: 1px solid ${colors.dark};
-  border-top: 1px solid ${colors.dark};
+  border-bottom: 1px solid var(--disabled);
+  border-top: 1px solid var(--disabled);
   display: flex;
   flex: 1;
   justify-content: center;
@@ -25,7 +25,7 @@ export const NavigationItem = styled.li`
   text-align: center;
 
   .active {
-    color: ${colors.accent};
+    color: var(--accent);
   }
 `
 
@@ -35,6 +35,6 @@ export const NavigationLink = styled(Link)`
   transition: color 0.3s;
 
   &:hover {
-    color: ${colors.accent};
+    color: var(--accent);
   }
 `

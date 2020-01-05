@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import colors from '~/styles/colors'
-
 export const LayoutWrapper = styled.div`
   display: grid;
   grid-template-columns: 20rem 1fr 3rem;
@@ -10,7 +8,6 @@ export const LayoutWrapper = styled.div`
 `
 
 export const LayoutMain = styled.main`
-  background: ${colors.lighter};
   display: flex;
   flex-direction: column;
   grid-area: main;
