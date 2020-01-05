@@ -23,7 +23,7 @@ export const PostHeader = styled.header`
 
 export const PostBackButton = styled.a`
   align-items: center;
-  color: ${colors.darker};
+  color: var(--button);
   cursor: pointer;
   display: flex;
   height: 3rem;
@@ -35,19 +35,19 @@ export const PostBackButton = styled.a`
   width: 3rem;
 
   &:hover {
-    color: ${colors.accent};
+    color: var(--accent);
   }
 `
 
 export const PostTitle = styled.h1`
-  color: ${colors.darker};
+  color: var(--title);
   font-size: 5rem;
   font-weight: 300;
   margin: 2rem 0;
 `
 
 export const PostDescription = styled.h2`
-  color: ${colors.darker};
+  color: var(--text);
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.5;
@@ -56,7 +56,7 @@ export const PostDescription = styled.h2`
 
 export const PostTag = styled.div`
   align-items: center;
-  color: ${colors.gray};
+  color: var(--neutral);
   display: flex;
   font-size: 1rem;
   font-weight: 700;
@@ -69,7 +69,7 @@ export const PostTag = styled.div`
 
 export const PostDate = styled.time`
   align-items: center;
-  color: ${colors.gray};
+  color: var(--neutral);
   display: flex;
   font-size: 0.8rem;
   font-weight: 700;
@@ -96,7 +96,7 @@ export const PostContent = styled.div`
   .tags,
   iframe,
   .button-post {
-    color: var(--postColor);
+    color: var(--text);
     font-size: 1.25rem;
     font-weight: 300;
     letter-spacing: 0.069rem;
@@ -149,14 +149,14 @@ export const PostContent = styled.div`
   }
 
   blockquote {
-    border-left: 0.3rem solid var(--highlight);
-    color: var(--postColor);
+    border-left: 0.3rem solid var(--accent);
+    color: var(--text);
     margin: 3.125rem auto;
     padding: 0 1.875rem;
   }
 
   hr {
-    border: 1px solid var(--borders);
+    border: 1px solid var(--disabled);
     margin: 3rem auto;
   }
   #twitter-widget-0,
@@ -224,13 +224,13 @@ export const PostContent = styled.div`
   }
 
   a {
-    border-bottom: 1px dashed var(--highlight);
-    color: var(--highlight);
+    border-bottom: 1px dashed var(--accent);
+    color: var(--accent);
     text-decoration: none;
     transition: opacity 0.5s;
 
     svg {
-      color: var(--postColor);
+      color: var(--text);
     }
 
     &:hover {
