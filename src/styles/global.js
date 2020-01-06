@@ -88,7 +88,7 @@ const GlogalStyle = createGlobalStyle`
     --title: ${colors.darker};
     --text: ${colors.dark};
     --accent: ${colors.accent};
-    --sidebar: ${colors.dark};
+    --sidebar: ${colors.darker};
     --button: ${colors.dark};
     --disabled: ${colors.gray};
     --neutral: ${colors.gray};
