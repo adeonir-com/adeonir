@@ -44,3 +44,21 @@ export const SearchContainer = styled.div`
     margin: 1rem 0;
   }
 `
+
+export const PostBackButton = styled.a`
+  align-items: center;
+  color: var(--button);
+  cursor: pointer;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  left: 20rem;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease;
+  width: 3rem;
+
+  &:hover {
+    color: var(--accent);
+  }
+`
