@@ -23,7 +23,7 @@ export const HitItemContainer = styled.section`
   transition: all 0.3s ease;
 
   &:hover {
-    background: ${colors.white};
+    background: var(--post);
   }
 `
 
