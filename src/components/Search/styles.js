@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import colors from '~/styles/colors'
-
 export const SearchContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -15,7 +13,7 @@ export const SearchContainer = styled.div`
   }
 
   .ais-SearchBox-form {
-    background: ${colors.white};
+    background: var(--post);
     border-radius: 0.5rem;
     display: flex;
   }
@@ -23,14 +21,14 @@ export const SearchContainer = styled.div`
   .ais-SearchBox-input {
     background: none;
     border: none;
-    color: ${colors.darker};
+    color: var(--text);
     font-size: 1.5rem;
     outline: none;
     padding: 1rem;
     width: 100%;
 
     &::placeholder {
-      color: ${colors.gray};
+      color: var(--neutral);
     }
   }
 
@@ -39,8 +37,9 @@ export const SearchContainer = styled.div`
     display: none;
   }
 
-  .ais-Stats {
-    color: ${colors.gray};
+  .ais-Stats,
+  .ais-Results {
+    color: var(--neutral);
     font-size: 0.8rem;
     margin: 1rem 0;
   }
