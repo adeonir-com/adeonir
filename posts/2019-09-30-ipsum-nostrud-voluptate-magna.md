@@ -1,6 +1,6 @@
 ---
 category: CSS
-background: '#96ceee'
+background: var(--css)
 title: 'Ipsum nostrud voluptate magna'
 description: 'Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.'
 date: 2019-09-30 09:38:43

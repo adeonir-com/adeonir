@@ -62,6 +62,11 @@ const GlogalStyle = createGlobalStyle`
     line-height: 1;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    --html: ${colors.red};
+    --css: ${colors.cyan};
+    --js: ${colors.yellow};
+    --music: ${colors.green};
+    --misc: ${colors.pink};
   }
 
   img {

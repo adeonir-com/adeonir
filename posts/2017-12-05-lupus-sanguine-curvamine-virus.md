@@ -1,6 +1,6 @@
 ---
 category: Music
-background: '#3ccc93'
+background: var(--music)
 title: 'Lupus sanguine curvamine virus'
 description: 'Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.'
 date: 2017-12-05 19:52:33

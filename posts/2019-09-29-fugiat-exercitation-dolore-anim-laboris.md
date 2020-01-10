@@ -1,6 +1,6 @@
 ---
 category: JS
-background: '#e5e942'
+background: var(--js)
 title: 'Fugiat exercitation dolore anim laboris'
 description: 'Lorem markdownum nescia lectum loquendo Phrygiae in finiat certet additus frustra. Stant is oscula quoque ferrum?'
 date: 2019-09-29 11:24:58

@@ -20,7 +20,9 @@ const Pagination = ({
         Página Anterior
       </S.PaginationButton>
     ) : (
-      <S.PaginationButton disabled>Primeira Página</S.PaginationButton>
+      <S.PaginationButton to='#' disabled>
+        Primeira Página
+      </S.PaginationButton>
     )}
 
     <S.PaginationCurrentPage>
@@ -28,12 +30,12 @@ const Pagination = ({
     </S.PaginationCurrentPage>
 
     {!isLast ? (
-      <S.PaginationButton right to={nextPage}>
+      <S.PaginationButton to={nextPage} right>
         Próxima Página
         <RightArrow size={24} />
       </S.PaginationButton>
     ) : (
-      <S.PaginationButton right disabled>
+      <S.PaginationButton to='#' disabled right>
         Última Página
       </S.PaginationButton>
     )}

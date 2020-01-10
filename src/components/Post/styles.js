@@ -44,6 +44,7 @@ export const PostTitle = styled.h1`
   font-size: 5rem;
   font-weight: 300;
   margin: 2rem 0;
+  transition: color 0.2s ease;
 `
 
 export const PostDescription = styled.h2`
@@ -52,6 +53,7 @@ export const PostDescription = styled.h2`
   font-weight: 300;
   line-height: 1.5;
   width: 80%;
+  transition: color 0.2s ease;
 `
 
 export const PostTag = styled.div`
@@ -61,6 +63,7 @@ export const PostTag = styled.div`
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
+  transition: color 0.2s ease;
 
   svg {
     margin-right: 0.5rem;

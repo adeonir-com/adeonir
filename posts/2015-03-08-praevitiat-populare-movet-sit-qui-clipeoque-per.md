@@ -1,6 +1,6 @@
 ---
 category: CSS
-background: '#96ceee'
+background: var(--css)
 title: 'Praevitiat populare movet sit qui clipeoque per'
 description: 'Relinquo Coroniden ab trunco auctor o toris bacae condiderant _confidit
 pressus_.'

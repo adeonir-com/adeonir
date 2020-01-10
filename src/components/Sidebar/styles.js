@@ -12,4 +12,5 @@ export const SidebarWrapper = styled.aside`
   position: fixed;
   text-align: center;
   width: 20rem;
+  transition: background 0.3s ease;
 `

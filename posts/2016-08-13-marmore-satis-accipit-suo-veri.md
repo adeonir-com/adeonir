@@ -1,6 +1,6 @@
 ---
 category: CSS
-background: '#96ceee'
+background: var(--css)
 title: 'Marmore satis accipit suo veri'
 description: 'Lorem markdownum illa subibat quibus est, et his est silet pollice virtutem metu, poterit.'
 date: 2016-08-13 21:28:43

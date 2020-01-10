@@ -37,6 +37,7 @@ export const HitItemTitle = styled.h1`
   color: var(--title);
   margin: 0.5rem 0;
   position: relative;
+  transition: color 0.2s ease;
 
   &::before {
     display: block;
@@ -55,6 +56,7 @@ export const HitItemDescription = styled.p`
   color: var(--text);
   font-size: 1rem;
   line-height: 1.5rem;
+  transition: color 0.2s ease;
 `
 
 export const HitItemTag = styled.div`
@@ -64,6 +66,7 @@ export const HitItemTag = styled.div`
   align-items: center;
   font-weight: 700;
   text-transform: uppercase;
+  transition: color 0.2s ease;
 
   svg {
     margin-right: 0.5rem;

@@ -9,4 +9,5 @@ export const AvatarImage = styled(Img)`
   border: 1px solid var(--sidebar);
   box-shadow: 0 0 0 1rem ${rgba(colors.white, 0.2)};
   margin: 1rem;
+  transition: border 0.5s ease;
 `

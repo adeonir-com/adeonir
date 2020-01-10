@@ -14,4 +14,5 @@ export const LayoutMain = styled.main`
   justify-content: space-between;
   min-height: 100vh;
   padding: 3rem 1rem 1rem 5rem;
+  transition: background 0.2s ease;
 `
