@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const SearchContainer = styled.div`
   display: flex;
@@ -45,7 +46,7 @@ export const SearchContainer = styled.div`
   }
 `
 
-export const PostBackButton = styled.a`
+export const PostBackButton = styled(AniLink)`
   align-items: center;
   color: var(--button);
   cursor: pointer;

@@ -3,6 +3,8 @@ import algoliasearch from 'algoliasearch'
 import { InstantSearch, SearchBox, Hits, Stats } from 'react-instantsearch-dom'
 import { LeftArrowAlt as LeftArrow } from 'styled-icons/boxicons-regular/LeftArrowAlt'
 
+import getThemeColor from '~/utils/get_theme_color'
+
 import Hit from './Hit'
 
 import * as S from './styles'
@@ -14,29 +16,29 @@ const client = algoliasearch(
 
 const index = process.env.GATSBY_ALGOLIA_INDEX_NAME
 
-const Search = () => {
-  function handleClick() {
-    window.history.back()
-  }
-
-  return (
-    <S.SearchContainer>
-      <S.PostBackButton onClick={handleClick}>
-        <LeftArrow size={24} />
-      </S.PostBackButton>
-      <InstantSearch searchClient={client} indexName={index}>
-        <SearchBox autoFocus translations={{ placeholder: 'Pesquisar...' }} />
-        <Stats
-          translations={{
-            stats(nbHits, timeSpentMs) {
-              return `${nbHits} resultados encontrados em ${timeSpentMs}ms`
-            },
-          }}
-        />
-        <Hits hitComponent={Hit} />
-      </InstantSearch>
-    </S.SearchContainer>
-  )
-}
+const Search = () => (
+  <S.SearchContainer>
+    <S.PostBackButton
+      to='/blog'
+      cover
+      direction='left'
+      bg={getThemeColor()}
+      duration={0.5}
+    >
+      <LeftArrow size={24} />
+    </S.PostBackButton>
+    <InstantSearch searchClient={client} indexName={index}>
+      <SearchBox autoFocus translations={{ placeholder: 'Pesquisar...' }} />
+      <Stats
+        translations={{
+          stats(nbHits, timeSpentMs) {
+            return `${nbHits} resultados encontrados em ${timeSpentMs}ms`
+          },
+        }}
+      />
+      <Hits hitComponent={Hit} />
+    </InstantSearch>
+  </S.SearchContainer>
+)
 
 export default Search

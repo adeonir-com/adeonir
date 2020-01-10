@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { TransitionPortal } from 'gatsby-plugin-transition-link'
 
 import Sidebar from '../Sidebar'
 import Menu from '../Menu'
@@ -11,9 +12,13 @@ const Layout = ({ children }) => {
   return (
     <S.LayoutWrapper>
       <GlobalSytles />
-      <Sidebar />
+      <TransitionPortal level='top'>
+        <Sidebar />
+      </TransitionPortal>
       <S.LayoutMain>{children}</S.LayoutMain>
-      <Menu />
+      <TransitionPortal level='top'>
+        <Menu />
+      </TransitionPortal>
     </S.LayoutWrapper>
   )
 }

@@ -5,23 +5,27 @@ import { PriceTag } from 'styled-icons/icomoon/PriceTag'
 import { Clock2 as Clock } from 'styled-icons/icomoon/Clock2'
 import { LeftArrowAlt as LeftArrow } from 'styled-icons/boxicons-regular/LeftArrowAlt'
 
-import Layout from '../components/Layout'
-import Seo from '../components/Seo'
+import getThemeColor from '~/utils/get_theme_color'
 
-import * as S from '../components/Post/styles'
+import Layout from '~/components/Layout'
+import Seo from '~/components/Seo'
+
+import * as S from '~/components/Post/styles'
 
 const Post = ({ data }) => {
   const post = data.markdownRemark
-
-  function handleClick () {
-    window.history.back()
-  }
 
   return (
     <Layout>
       <Seo title={post.frontmatter.title} />
       <S.PostWrapper background={post.frontmatter.background}>
-        <S.PostBackButton onClick={handleClick}>
+        <S.PostBackButton
+          to='/blog'
+          cover
+          direction='left'
+          bg={getThemeColor()}
+          duration={0.5}
+        >
           <LeftArrow size={24} />
         </S.PostBackButton>
         <S.PostHeader>

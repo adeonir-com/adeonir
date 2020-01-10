@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Search } from 'styled-icons/boxicons-regular/Search'
 import { Sun } from 'styled-icons/boxicons-regular/Sun'
 
+import getThemeColor from '~/utils/get_theme_color'
+
 import * as S from './styles'
 
 const Menu = () => {
@@ -16,7 +18,13 @@ const Menu = () => {
 
   return (
     <S.MenuWrapper>
-      <S.MenuLink to='/search'>
+      <S.MenuLink
+        to='/search'
+        cover
+        direction='right'
+        bg={getThemeColor()}
+        duration={0.5}
+      >
         <S.MenuItem title='Pesquisar'>
           <Search size={22} />
         </S.MenuItem>

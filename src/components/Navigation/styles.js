@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import colors from '~/styles/colors'
 
@@ -29,7 +29,7 @@ export const NavigationItem = styled.li`
   }
 `
 
-export const NavigationLink = styled(Link)`
+export const NavigationLink = styled(AniLink)`
   color: ${colors.lighter};
   text-decoration: none;
   transition: color 0.3s;

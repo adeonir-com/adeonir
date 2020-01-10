@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const MenuWrapper = styled.aside`
   align-items: center;
@@ -11,7 +11,7 @@ export const MenuWrapper = styled.aside`
   width: 3rem;
 `
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled(AniLink)`
   display: block;
 `
 

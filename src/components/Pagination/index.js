@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { LeftArrowAlt as LeftArrow } from 'styled-icons/boxicons-regular/LeftArrowAlt'
 import { RightArrowAlt as RightArrow } from 'styled-icons/boxicons-regular/RightArrowAlt'
 
+import getThemeColor from '~/utils/get_theme_color'
+
 import * as S from './styles'
 
 const Pagination = ({
@@ -15,7 +17,13 @@ const Pagination = ({
 }) => (
   <S.PaginationWrapper>
     {!isFirst ? (
-      <S.PaginationButton to={prevPage}>
+      <S.PaginationButton
+        to={prevPage}
+        cover
+        direction='left'
+        bg={getThemeColor()}
+        duration={0.5}
+      >
         <LeftArrow size={24} />
         Página Anterior
       </S.PaginationButton>
@@ -30,7 +38,14 @@ const Pagination = ({
     </S.PaginationCurrentPage>
 
     {!isLast ? (
-      <S.PaginationButton to={nextPage} right>
+      <S.PaginationButton
+        to={nextPage}
+        cover
+        direction='right'
+        bg={getThemeColor()}
+        duration={0.5}
+        right
+      >
         Próxima Página
         <RightArrow size={24} />
       </S.PaginationButton>

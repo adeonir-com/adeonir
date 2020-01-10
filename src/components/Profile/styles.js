@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import colors from '~/styles/colors'
 
@@ -10,7 +10,7 @@ export const ProfileWrapper = styled.section`
   padding-top: 2rem;
 `
 
-export const ProfileLink = styled(Link)`
+export const ProfileLink = styled(AniLink)`
   text-decoration: none;
   transition: color 0.3s;
 

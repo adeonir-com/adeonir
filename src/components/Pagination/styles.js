@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const PaginationWrapper = styled.section`
   align-items: center;
@@ -12,7 +12,7 @@ export const PaginationWrapper = styled.section`
   text-transform: uppercase;
 `
 
-export const PaginationButton = styled(Link)`
+export const PaginationButton = styled(AniLink)`
   align-items: center;
   color: var(--button);
   display: flex;

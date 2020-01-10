@@ -2,16 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { PriceTag } from 'styled-icons/icomoon/PriceTag'
 
+import getThemeColor from '~/utils/get_theme_color'
+
 import * as S from './styles'
 
-const HitItem = ({
-  slug,
-  category,
-  background,
-  title,
-  description,
-}) => (
-  <S.HitItemLink to={slug}>
+const HitItem = ({ slug, category, background, title, description }) => (
+  <S.HitItemLink
+    to={slug}
+    cover
+    direction='right'
+    bg={getThemeColor()}
+    duration={0.5}
+  >
     <S.HitItemContainer>
       <S.HitItemInfo>
         <S.HitItemTag>

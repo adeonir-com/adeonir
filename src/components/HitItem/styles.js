@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import colors from '~/styles/colors'
 
-export const HitItemLink = styled(Link)`
+export const HitItemLink = styled(AniLink)`
   color: ${colors.dark};
   display: flex;
   margin-bottom: 1rem;

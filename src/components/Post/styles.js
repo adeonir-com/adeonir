@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import colors from '~/styles/colors'
 
@@ -21,7 +22,7 @@ export const PostHeader = styled.header`
   position: relative;
 `
 
-export const PostBackButton = styled.a`
+export const PostBackButton = styled(AniLink)`
   align-items: center;
   color: var(--button);
   cursor: pointer;

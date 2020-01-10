@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { PriceTag } from 'styled-icons/icomoon/PriceTag'
 import { Clock2 as Clock } from 'styled-icons/icomoon/Clock2'
 
+import getThemeColor from '~/utils/get_theme_color'
+
 import * as S from './styles'
 
 const PostItem = ({
@@ -14,7 +16,13 @@ const PostItem = ({
   date,
   timeToRead,
 }) => (
-  <S.PostItemLink to={slug}>
+  <S.PostItemLink
+    to={slug}
+    cover
+    direction='right'
+    bg={getThemeColor()}
+    duration={0.5}
+  >
     <S.PostItemWrapper>
       <S.PostItemInfo>
         <S.PostItemTag>
