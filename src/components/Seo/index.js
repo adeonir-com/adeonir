@@ -12,7 +12,7 @@ const Seo = ({ description, lang, meta, title, image }) => {
             title
             description
             author
-            url
+            siteUrl
           }
         }
       }
@@ -21,7 +21,7 @@ const Seo = ({ description, lang, meta, title, image }) => {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const url = site.siteMetadata.url
+  const url = site.siteMetadata.siteUrl
   const ogImage = `${url}${image || '/uploads/cover.jpg'}`
 
   return (

@@ -4,10 +4,10 @@ background: var(--css)
 title: 'Ipsum nostrud voluptate magna'
 description: 'Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.'
 date: 2019-09-30 09:38:43
-image: '/assets/img/desert.jpg'
+image: '/uploads/desert.jpg'
 ---
 
-![Desert](/assets/img/desert.jpg)
+![Desert](/uploads/desert.jpg)
 
 Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.
 Quisquis extra postquam, et arbor erat accepere levati criminibusque! Ultra orbe

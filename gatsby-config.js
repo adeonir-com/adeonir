@@ -9,9 +9,10 @@ module.exports = {
     author: '@adeonir',
     description:
       'Desenvolvedor da Joyjet Digital Space Agency, escrevo sobre front-end, vida pessoal e outras coisas mais.',
-    url: 'https://adeonir.com',
+    siteUrl: 'https://adeonir.com',
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-transition-link',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
