@@ -75,8 +75,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Adeonir Kohl',
+        short_name: 'Adeonir Kohl',
         start_url: '/',
         background_color: '#252a41',
         theme_color: '#252a41',
@@ -87,6 +87,7 @@ module.exports = {
     'gatsby-plugin-eslint',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    'gatsby-plugin-offline',
+    'gatsby-plugin-netlify-cms',
   ],
 }

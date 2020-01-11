@@ -1,0 +1,46 @@
+backend:
+  name: github
+  repo: https://github.com/adeonir-com/adeonir.com
+  branch: master
+  site_domain: https://adeonir.netlify.com/
+
+publish_mode: editorial_workflow
+media_folder: 'static/uploads'
+public_folder: '/uploads'
+
+collections:
+  - name: 'posts'
+    label: 'Posts'
+    folder: 'posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Título', name: 'title', widget: 'string' }
+      - { label: 'Descrição', name: 'description', widget: 'string' }
+      - {
+          label: 'Data',
+          name: 'date',
+          widget: 'datetime',
+          format: 'YYY-MM-DD hh:mm:ss',
+        }
+      - {
+          label: 'Category',
+          name: 'category',
+          widget: 'select',
+          options: ['css', 'html', 'js', 'misc', 'music'],
+        }
+      - {
+          label: 'Background',
+          name: 'background',
+          widget: 'select',
+          options:
+            [
+              { label: 'HTML', value: '#ff6348' },
+              { label: 'CSS', value: '#7ac0e8' },
+              { label: 'JS', value: '#c6ca3d' },
+              { label: 'Music', value: '#3ccc93' },
+              { label: 'Misc', value: '#ec8ae0' },
+            ],
+        }
+      - { label: 'Imagem', name: 'image', widget: 'image' }
+      - { label: 'Conteúdo', name: 'body', widget: 'markdown' }
