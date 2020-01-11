@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const Seo = ({ description, lang, meta, title }) => {
+const Seo = ({ description, lang, meta, title, image }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -12,6 +12,7 @@ const Seo = ({ description, lang, meta, title }) => {
             title
             description
             author
+            url
           }
         }
       }
@@ -19,6 +20,9 @@ const Seo = ({ description, lang, meta, title }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+
+  const url = site.siteMetadata.url
+  const ogImage = `${url}${image || '/uploads/cover.jpg'}`
 
   return (
     <Helmet
@@ -41,12 +45,20 @@ const Seo = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
+          property: 'og:image',
+          content: ogImage,
+        },
+        {
           property: 'og:type',
           content: 'website',
         },
         {
           name: 'twitter:card',
           content: 'summary',
+        },
+        {
+          name: 'twitter:image:src',
+          content: ogImage,
         },
         {
           name: 'twitter:creator',
@@ -76,6 +88,7 @@ Seo.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string,
 }
 
 export default Seo

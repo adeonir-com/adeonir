@@ -19,7 +19,7 @@ export const ProfileLink = styled(AniLink)`
   }
 `
 
-export const ProfileAuthor = styled.h1`
+export const ProfileTitle = styled.h1`
   color: ${colors.lighter};
   font-size: 1.75rem;
   margin: 1rem auto 0.75rem;

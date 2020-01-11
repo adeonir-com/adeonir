@@ -7,7 +7,7 @@ import * as S from '../styles/pages'
 
 const PortfolioPage = () => (
   <Layout>
-    <Seo title='Portfolio' />
+    <Seo title='Portfolio' description='Veja alguns trabalhos realizados.' />
     <S.PageWrapper>
       <S.PageTitle>Portfolio</S.PageTitle>
     </S.PageWrapper>

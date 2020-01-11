@@ -12,10 +12,6 @@ const links = [
     url: '/portfolio/',
   },
   {
-    label: 'Serviços',
-    url: '/servicos/',
-  },
-  {
     label: 'Sobre',
     url: '/sobre/',
   },

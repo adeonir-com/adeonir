@@ -17,7 +17,11 @@ const Post = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title={post.frontmatter.title} />
+      <Seo
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        image={post.frontmatter.image}
+      />
       <S.PostWrapper background={post.frontmatter.background}>
         <S.PostBackButton
           to='/blog'
@@ -55,6 +59,7 @@ export const query = graphql`
         title
         description
         date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
+        image
       }
       html
       timeToRead
@@ -71,6 +76,7 @@ Post.propTypes = {
         title: PropTypes.string,
         description: PropTypes.string,
         date: PropTypes.string,
+        image: PropTypes.string,
       }),
       html: PropTypes.string,
       timeToRead: PropTypes.number,

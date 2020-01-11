@@ -4,10 +4,12 @@ const queries = require('./src/utils/algolia_queries')
 
 module.exports = {
   siteMetadata: {
-    author: 'Adeonir Kohl',
-    position: 'Frontend Developer | UI Designer',
     title: 'Adeonir Kohl',
-    description: '',
+    position: 'Frontend Developer | UI Designer',
+    author: '@adeonir',
+    description:
+      'Desenvolvedor da Joyjet Digital Space Agency, escrevo sobre front-end, vida pessoal e outras coisas mais.',
+    url: 'https://adeonir.com',
   },
   plugins: [
     'gatsby-plugin-transition-link',

@@ -10,13 +10,13 @@ import * as S from './styles'
 const Profile = () => {
   const {
     site: {
-      siteMetadata: { author, position },
+      siteMetadata: { title, position },
     },
   } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
-          author
+          title
           position
         }
       }
@@ -33,7 +33,7 @@ const Profile = () => {
         duration={0.5}
       >
         <Avatar />
-        <S.ProfileAuthor>{author}</S.ProfileAuthor>
+        <S.ProfileTitle>{title}</S.ProfileTitle>
       </S.ProfileLink>
       <S.ProfilePosition>{position}</S.ProfilePosition>
     </S.ProfileWrapper>

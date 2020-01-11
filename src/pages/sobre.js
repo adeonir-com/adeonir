@@ -8,6 +8,10 @@ import * as S from '../styles/pages'
 const AboutPage = () => (
   <Layout>
     <Seo title='Sobre Mim' />
+    <Seo
+      title='Sobre Mim'
+      description='Saiba um pouco mais sobre o desenvolvedor deste blog.'
+    />
     <S.PageWrapper>
       <S.PageTitle>Sobre Mim</S.PageTitle>
     </S.PageWrapper>
