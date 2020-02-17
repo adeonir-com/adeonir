@@ -13,16 +13,17 @@ import Seo from '~/components/Seo'
 import * as S from '~/components/Post/styles'
 
 const Post = ({ data }) => {
-  const post = data.markdownRemark
+  const post = data.wordpressPost
+  post.category = post.categories[0].slug
 
   return (
     <Layout>
       <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description}
-        image={post.frontmatter.image}
+        title={post.title}
+        description={post.description}
+        image={post.image}
       />
-      <S.PostWrapper background={post.frontmatter.background}>
+      <S.PostWrapper background={`var(--${post.category})`}>
         <S.PostBackButton
           to='/blog'
           cover
@@ -35,16 +36,16 @@ const Post = ({ data }) => {
         <S.PostHeader>
           <S.PostTag>
             <PriceTag size={20} />
-            {post.frontmatter.category}
+            {post.category}
           </S.PostTag>
-          <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
-          <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
+          <S.PostTitle>{post.title}</S.PostTitle>
+          <S.PostDescription>{post.description}</S.PostDescription>
           <S.PostDate>
             <Clock size={20} />
-            {post.frontmatter.date} - {post.timeToRead} minutos de leitura
+            {post.date}
           </S.PostDate>
         </S.PostHeader>
-        <S.PostContent dangerouslySetInnerHTML={{ __html: post.html }} />
+        <S.PostContent dangerouslySetInnerHTML={{ __html: post.content }} />
       </S.PostWrapper>
     </Layout>
   )
@@ -52,34 +53,36 @@ const Post = ({ data }) => {
 
 export const query = graphql`
   query GetPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      frontmatter {
-        background
-        category
-        title
-        description
-        date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
-        image
+    wordpressPost(slug: { eq: $slug }) {
+      id
+      title
+      slug
+      categories {
+        slug
       }
-      html
-      timeToRead
+      date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
+      featured_media {
+        image: source_url
+      }
+      description: excerpt
+      content
     }
   }
 `
 
 Post.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.shape({
-        background: PropTypes.string,
-        category: PropTypes.string,
-        title: PropTypes.string,
-        description: PropTypes.string,
-        date: PropTypes.string,
-        image: PropTypes.string,
+    wordpressPost: PropTypes.shape({
+      id: PropTypes.number,
+      title: PropTypes.string,
+      description: PropTypes.shape({
+        slug: PropTypes.string,
       }),
-      html: PropTypes.string,
-      timeToRead: PropTypes.number,
+      content: PropTypes.string,
+      categories: PropTypes.string,
+      category: PropTypes.string,
+      date: PropTypes.string,
+      image: PropTypes.string,
     }),
   }).isRequired,
 }

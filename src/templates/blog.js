@@ -10,7 +10,7 @@ import Pagination from '../components/Pagination'
 import * as S from '../styles/pages'
 
 const Blog = props => {
-  const posts = props.data.allMarkdownRemark.edges
+  const posts = props.data.allWordpressPost.edges
   const { currentPage, numPages } = props.pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
@@ -24,25 +24,21 @@ const Blog = props => {
       <S.PageWrapper>
         <S.PageTitle>Blog</S.PageTitle>
         {posts.map(
-          ({
-            node: {
-              frontmatter: { category, background, title, description, date },
-              timeToRead,
-              id,
-              fields: { slug },
-            },
-          }) => (
-            <PostItem
-              key={id}
-              slug={slug}
-              category={category}
-              background={background}
-              title={title}
-              description={description}
-              date={date}
-              timeToRead={timeToRead}
-            />
-          )
+          ({ node: { id, slug, title, categories, date, description } }) => {
+            const category = categories[0].slug
+
+            return (
+              <PostItem
+                key={id}
+                slug={slug}
+                category={category}
+                background={`var(--${category})`}
+                title={title}
+                description={description}
+                date={date}
+              />
+            )
+          }
         )}
       </S.PageWrapper>
       <Pagination
@@ -59,25 +55,21 @@ const Blog = props => {
 
 export const query = graphql`
   query GetAllPosts($limit: Int!, $skip: Int!) {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: frontmatter___date }
+    allWordpressPost(
+      sort: { fields: date, order: DESC }
       limit: $limit
       skip: $skip
     ) {
       edges {
         node {
           id
-          fields {
+          slug
+          title
+          categories {
             slug
           }
-          frontmatter {
-            background
-            category
-            title
-            description
-            date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
-          }
-          timeToRead
+          date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
+          description: excerpt
         }
       }
     }
@@ -86,9 +78,8 @@ export const query = graphql`
 
 Blog.propTypes = {
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
+    allWordpressPost: PropTypes.shape({
       edges: PropTypes.array,
-      html: PropTypes.string,
     }),
   }).isRequired,
   pageContext: PropTypes.shape({

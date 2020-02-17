@@ -12,58 +12,40 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   })
 }
 
-// Add slug field to each post
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
-  if (node.internal.type === 'MarkdownRemark') {
-    const slug = createFilePath({
-      node,
-      getNode,
-      basePath: 'pages',
-    })
-    createNodeField({
-      node,
-      name: 'slug',
-      value: `/${slug.slice(12)}`,
-    })
-  }
-}
-
 // Create pages dinamically
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return graphql(`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+      allWordpressPost(sort: { fields: date, order: DESC }) {
         edges {
           node {
+            title
             id
-            fields {
-              slug
+            slug
+            categories {
+              category: slug
             }
-            frontmatter {
-              background
-              category
-              description
-              title
-              date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
-              image
+            date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
+            featured_media {
+              image: source_url
             }
-            timeToRead
+            description: excerpt
+            content
           }
         }
       }
     }
   `).then(result => {
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allWordpressPost.edges
 
     posts.forEach(({ node }) => {
       createPage({
-        path: node.fields.slug,
+        path: node.slug,
         component: path.resolve('./src/templates/post.js'),
         context: {
-          slug: node.fields.slug,
+          slug: node.slug,
         },
       })
     })

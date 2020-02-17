@@ -6,16 +6,9 @@ import { Clock2 as Clock } from 'styled-icons/icomoon/Clock2'
 import getThemeColor from '~/utils/get_theme_color'
 
 import * as S from './styles'
+import { PostItemInfo as NewPostItemInfo } from './styles'
 
-const PostItem = ({
-  slug,
-  category,
-  background,
-  title,
-  description,
-  date,
-  timeToRead,
-}) => (
+const PostItem = ({ slug, category, background, title, description, date }) => (
   <S.PostItemLink
     to={slug}
     cover
@@ -24,7 +17,7 @@ const PostItem = ({
     duration={0.5}
   >
     <S.PostItemWrapper>
-      <S.PostItemInfo>
+      <S.NewPostItemInfo>
         <S.PostItemTag>
           <PriceTag size={20} />
           {category}
@@ -33,21 +26,20 @@ const PostItem = ({
         <S.PostItemDescription>{description}</S.PostItemDescription>
         <S.PostItemDate>
           <Clock size={20} />
-          {date} - {timeToRead} minutos de leitura
+          {date}
         </S.PostItemDate>
-      </S.PostItemInfo>
+      </S.NewPostItemInfo>
     </S.PostItemWrapper>
   </S.PostItemLink>
 )
 
 PostItem.propTypes = {
   slug: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  category: PropTypes.string,
   background: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  timeToRead: PropTypes.number.isRequired,
 }
 
 export default PostItem
