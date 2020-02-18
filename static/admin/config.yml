@@ -2,7 +2,7 @@ backend:
   name: github
   repo: adeonir-com/adeonir.com
   branch: master
-  site_domain: adeonir.netlify.com
+  site_domain: https://adeonir.netlify.com
 
 publish_mode: editorial_workflow
 media_folder: static/uploads
@@ -16,7 +16,7 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Descrição', name: 'description', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
       - {
           label: 'Date',
           name: 'date',

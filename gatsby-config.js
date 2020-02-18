@@ -81,12 +81,10 @@ module.exports = {
         background_color: '#252a41',
         theme_color: '#252a41',
         display: 'minimal-ui',
-        icon: 'src/images/adeonir-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/adeonir-icon.png',
       },
     },
     'gatsby-plugin-eslint',
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify-cms',
   ],
