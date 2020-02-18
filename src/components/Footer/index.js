@@ -14,11 +14,11 @@ const Footer = () => (
     </S.FooterLink>
     <S.FooterText>and</S.FooterText>
     <S.FooterLink
-      href='https://strapi.io'
+      href='https://www.netlifycms.org/'
       target='_blank'
       rel='noopener noreferrer'
     >
-      Strapi
+      Netlify CMS
     </S.FooterLink>
   </S.FooterContainer>
 )
