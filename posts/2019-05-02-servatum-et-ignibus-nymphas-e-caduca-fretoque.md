@@ -1,9 +1,8 @@
 ---
-category: Misc
-background: var(--misc)
 title: 'Servatum et ignibus nymphas e caduca fretoque'
 description: 'Lorem markdownum quoque, nostri, tela iamque ad antiquas, commentaque tecum revocare bene, tangit.'
 date: 2019-05-02 09:38:43
+category: misc
 ---
 
 Lorem markdownum quoque, nostri, tela iamque ad antiquas, commentaque tecum

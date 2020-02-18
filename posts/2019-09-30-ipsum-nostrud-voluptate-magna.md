@@ -1,9 +1,8 @@
 ---
-category: CSS
-background: var(--css)
 title: 'Ipsum nostrud voluptate magna'
 description: 'Lorem markdownum novi concresse litus primaque pulchra et cautus sorori.'
 date: 2019-09-30 09:38:43
+category: css
 image: '/uploads/desert.jpg'
 ---
 

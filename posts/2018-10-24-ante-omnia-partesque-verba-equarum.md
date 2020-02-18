@@ -1,9 +1,8 @@
 ---
-category: HTML
-background: var(--html)
 title: 'Ante omnia partesque verba equarum'
 description: 'Lorem markdownum Appenninus Pico, vitta secuta mihi laevi gnato natis et anus tramite salutifera muneraque efferor adnuit. '
 date: 2018-10-24 09:38:43
+category: html
 ---
 
 Lorem markdownum Appenninus Pico, vitta secuta mihi laevi gnato natis et anus
