@@ -5,7 +5,6 @@ description: >-
   pressus_.
 date: 2015-03-08T15:21:32.000Z
 category: css
-background: '#7ac0e8'
 image: /uploads/cover.jpg
 ---
 [Lorem markdownum](http://ianthetraxit.io/auctaque) non solebant sunt, est his tuis [pronus](http://spatiosi-in.com/fuit-titanida) talia sed, in primus me animum. Relinquo Coroniden ab trunco auctor o toris bacae condiderant *confidit pressus*.
@@ -31,9 +30,7 @@ dithering_text_alu.tag /= 4;
 
 ## Conveniunt rediit omnes torum creber alto Calydonis
 
-Colligit pascere, [venires spes](http://moverevenus.io/); vidit planguntur peregit, me viribus! Sparsum epulanda nomen adspexisse venis aequore, subvectaque colerent lassos tenebant, sua dicens Minervae leve, sum. Fit Paean
-hominis: sorore imas [lapis non refugit](http://www.in.org/telo-tolle) offer repperit, diu utque curru, optatis quoque. Parce innumerasque arte silentum oraque Pico virgine: quo conbibit loqui. Quaerens putares sollerti litore grates
-verba: et et Mopsum tamen, indiciumque per levi, spernimur et nullaque iubeas.
+Colligit pascere, [venires spes](http://moverevenus.io/); vidit planguntur peregit, me viribus! Sparsum epulanda nomen adspexisse venis aequore, subvectaque colerent lassos tenebant, sua dicens Minervae leve, sum. Fit Paean hominis: sorore imas [lapis non refugit](http://www.in.org/telo-tolle) offer repperit, diu utque curru, optatis quoque. Parce innumerasque arte silentum oraque Pico virgine: quo conbibit loqui. Quaerens putares sollerti litore grates verba: et et Mopsum tamen, indiciumque per levi, spernimur et nullaque iubeas.
 
 ## Caluere dabatur figurae infamis dextro genetrice lenita
 
