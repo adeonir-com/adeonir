@@ -8,7 +8,7 @@ export const PaginationWrapper = styled.section`
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
-  padding-top: 1rem;
+  padding: 1rem;
   text-transform: uppercase;
 `
 

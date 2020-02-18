@@ -4,7 +4,6 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import colors from '~/styles/colors'
 
 export const NavigationWrapper = styled.nav`
-  border-bottom: 1px solid var(--disabled);
   border-top: 1px solid var(--disabled);
   display: flex;
   flex: 1;

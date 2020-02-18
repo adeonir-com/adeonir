@@ -3,13 +3,16 @@ import styled from 'styled-components'
 import colors from '~/styles/colors'
 
 export const SocialWrapper = styled.nav`
-  padding-bottom: 1rem;
+  border-top: 1px solid var(--disabled);
+  display: flex;
+  height: 3.75rem;
   width: 100%;
 `
 
 export const SocialList = styled.ul`
   align-items: center;
   display: flex;
+  flex: 1;
   justify-content: space-around;
   list-style: none;
 `
