@@ -22,7 +22,7 @@ const Post = ({ data }) => {
         description={post.frontmatter.description}
         image={post.frontmatter.image}
       />
-      <S.PostWrapper background={post.frontmatter.background}>
+      <S.PostWrapper background={`var(--${post.frontmatter.category}`}>
         <S.PostBackButton
           to='/blog'
           cover
@@ -41,7 +41,9 @@ const Post = ({ data }) => {
           <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
           <S.PostDate>
             <Clock size={20} />
-            {post.frontmatter.date} - {post.timeToRead} minutos de leitura
+            {post.frontmatter.date}
+            {' - '}
+            {post.timeToRead === 1 ? 'minuto de leitura' : 'minutos de leitura'}
           </S.PostDate>
         </S.PostHeader>
         <S.PostContent dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -54,11 +56,10 @@ export const query = graphql`
   query GetPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
-        background
-        category
         title
         description
         date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
+        category
         image
       }
       html
@@ -71,11 +72,10 @@ Post.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.shape({
-        background: PropTypes.string,
-        category: PropTypes.string,
         title: PropTypes.string,
         description: PropTypes.string,
         date: PropTypes.string,
+        category: PropTypes.string,
         image: PropTypes.string,
       }),
       html: PropTypes.string,

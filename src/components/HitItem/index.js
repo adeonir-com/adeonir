@@ -6,7 +6,7 @@ import getThemeColor from '~/utils/get_theme_color'
 
 import * as S from './styles'
 
-const HitItem = ({ slug, category, background, title, description }) => (
+const HitItem = ({ slug, title, description, category }) => (
   <S.HitItemLink
     to={slug}
     cover
@@ -20,7 +20,9 @@ const HitItem = ({ slug, category, background, title, description }) => (
           <PriceTag size={20} />
           {category}
         </S.HitItemTag>
-        <S.HitItemTitle background={background}>{title}</S.HitItemTitle>
+        <S.HitItemTitle background={`var(--${category})`}>
+          {title}
+        </S.HitItemTitle>
         <S.HitItemDescription>{description}</S.HitItemDescription>
       </S.HitItemInfo>
     </S.HitItemContainer>
@@ -30,7 +32,6 @@ const HitItem = ({ slug, category, background, title, description }) => (
 HitItem.propTypes = {
   slug: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
-  background: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 }

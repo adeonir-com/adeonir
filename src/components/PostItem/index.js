@@ -7,15 +7,7 @@ import getThemeColor from '~/utils/get_theme_color'
 
 import * as S from './styles'
 
-const PostItem = ({
-  slug,
-  category,
-  background,
-  title,
-  description,
-  date,
-  timeToRead,
-}) => (
+const PostItem = ({ slug, title, description, date, category, timeToRead }) => (
   <S.PostItemLink
     to={slug}
     cover
@@ -29,7 +21,9 @@ const PostItem = ({
           <PriceTag size={20} />
           {category}
         </S.PostItemTag>
-        <S.PostItemTitle background={background}>{title}</S.PostItemTitle>
+        <S.PostItemTitle background={`var(--${category})`}>
+          {title}
+        </S.PostItemTitle>
         <S.PostItemDescription>{description}</S.PostItemDescription>
         <S.PostItemDate>
           <Clock size={20} />
@@ -43,7 +37,6 @@ const PostItem = ({
 PostItem.propTypes = {
   slug: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
-  background: PropTypes.string,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
