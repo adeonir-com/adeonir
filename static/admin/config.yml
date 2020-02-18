@@ -2,7 +2,7 @@ backend:
   name: github
   repo: adeonir-com/adeonir.com
   branch: master
-  site_domain: https://adeonir.netlify.com/
+  site_domain: adeonir.netlify.com
 
 publish_mode: editorial_workflow
 media_folder: static/uploads
@@ -28,19 +28,6 @@ collections:
           name: 'category',
           widget: 'select',
           options: ['html', 'css', 'js', 'misc', 'music'],
-        }
-      - {
-          label: 'Background',
-          name: 'background',
-          widget: 'select',
-          options:
-            [
-              { label: 'HTML', value: '#ff6348' },
-              { label: 'CSS', value: '#7ac0e8' },
-              { label: 'JS', value: '#c6ca3d' },
-              { label: 'Music', value: '#3ccc93' },
-              { label: 'Misc', value: '#ec8ae0' },
-            ],
         }
       - { label: 'Feature Image', name: 'image', widget: 'image' }
       - { label: 'Content', name: 'body', widget: 'markdown' }
