@@ -43,7 +43,9 @@ const Post = ({ data }) => {
             <Clock size={20} />
             {post.frontmatter.date}
             {' - '}
-            {post.timeToRead === 1 ? 'minuto de leitura' : 'minutos de leitura'}
+            {post.timeToRead === 1
+              ? `${post.timeToRead} minuto de leitura`
+              : `${post.timeToRead} minutos de leitura`}
           </S.PostDate>
         </S.PostHeader>
         <S.PostContent dangerouslySetInnerHTML={{ __html: post.html }} />

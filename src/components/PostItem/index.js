@@ -27,7 +27,11 @@ const PostItem = ({ slug, title, description, date, category, timeToRead }) => (
         <S.PostItemDescription>{description}</S.PostItemDescription>
         <S.PostItemDate>
           <Clock size={20} />
-          {date} - {timeToRead} minutos de leitura
+          {date}
+          {' - '}
+          {timeToRead === 1
+            ? `${timeToRead} minuto de leitura`
+            : `${timeToRead} minutos de leitura`}
         </S.PostItemDate>
       </S.PostItemInfo>
     </S.PostItemWrapper>
